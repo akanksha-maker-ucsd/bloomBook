@@ -54,7 +54,7 @@ nav a:hover {
 .hero {
     background-image: url('plant_back.jpg');
     background-size: cover;
-    background-position: center bottom;
+    background-position: center;
     color: #fff;
     height: 50vh;
 
