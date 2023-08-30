@@ -1,0 +1,146 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0ece2;
+    color: #333;
+    margin: 0;
+}
+
+h1{
+    color: rgb(34, 53, 36);
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    font-size: 3rem;
+}
+
+/* Header styles */
+header {
+    background-color: #b0d7a0;
+    color: rgba(16, 39, 19);
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 5px solid #dfad6c;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    color: rgb(34, 53, 36);
+    font-family: 'Playfair Display', serif;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #dfad6c;
+}
+
+/* Hero section styles */
+.hero {
+    background-image: url('plant_back.jpg');
+    background-size: cover;
+    background-position: center bottom;
+    color: #fff;
+    height: 50vh;
+
+}
+
+.text {
+    width: 30%;
+    background-color: rgba(16, 39, 19, 0.75);
+    z-index: 100;
+    border-radius: 20px;
+    padding: 10px;
+    margin: auto auto auto auto; /* Center horizontally */
+    text-align: center;
+    /* left: 50%; */
+    top: 20%;
+    position: sticky;
+    font-family: 'Poppins', sans-serif;
+}
+
+.hero h2 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    font-family: 'Playfair Display', serif;
+}
+
+/* Button styles */
+.btn {
+    display: inline-block;
+    background-color: #dfad6c;
+    color: #fff;
+    padding: 12px 28px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #c59d54;
+}
+
+/* Plants section styles */
+.plants {
+    padding: 50px 0; /* Adjust padding for mobile and tablet */
+}
+
+.plants h2 {
+    font-size: 2.5rem; /* Adjust font size for mobile and tablet */
+    margin-bottom: 20px;
+}
+
+/* Footer styles */
+footer {
+    background-color: #b0d7a0;
+    text-align: center;
+    padding: 20px 0;
+    color: #333;
+    font-size: 0.9rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Media Queries for Tablet and Mobile */
+@media (max-width: 768px) {
+    .hero {
+        padding: 80px 0; /* Adjust padding for mobile */
+    }
+
+    .text {
+        width: 90%; /* Adjust width for mobile */
+        margin: 10% auto; /* Adjust margin for mobile */
+    }
+
+    .hero h2 {
+        font-size: 2rem; /* Adjust font size for mobile */
+        margin-bottom: 10px;
+    }
+
+    .plants {
+        padding: 30px 0; /* Adjust padding for mobile */
+    }
+
+    .plants h2 {
+        font-size: 2rem; /* Adjust font size for mobile */
+        margin-bottom: 15px;
+    }
+}
