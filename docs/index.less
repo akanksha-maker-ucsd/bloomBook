@@ -1,12 +1,11 @@
+p,
+a {
+    font-size: 12px;
+}
 
 
-
-    p, a {
-        font-size: 12px;
-    }
-
-
-html, body {
+html,
+body {
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
@@ -14,8 +13,11 @@ html, body {
 
 
 nav {
-    background-color: #b1b8a5; /* Background color for the navbar */
-    color: #fff; /* Text color for links */
+    background-color: #A6AF94;
+    //#b1b8a5;
+    /* Background color for the navbar */
+    color: #fff;
+    /* Text color for links */
     display: flex;
     align-items: center;
     position: fixed;
@@ -24,18 +26,23 @@ nav {
     box-shadow: 5px 5px 5px rgba(51, 51, 51, 0.3);
     z-index: 2;
 
+    @media (max-width: 680px) {
+        height: 4rem;
+    }
+
     .navLinks {
         @media (max-width: 680px) {
-            display:none;
+            display: none;
         }
     }
- 
+
     .mobileMenu {
         display: none;
         margin: 2rem;
         cursor: pointer;
         font-size: 24px;
         color: #fff;
+
         @media (max-width: 680px) {
             display: block;
         }
@@ -46,8 +53,10 @@ nav {
     display: none;
     position: fixed;
     z-index: 5;
+
     .menuLinks {
         font-family: Kumbh Sans;
+
         li {
             :hover {
                 opacity: 0.8;
@@ -66,7 +75,8 @@ nav {
     width: 200px;
     height: auto;
     z-index: 5;
-    border-radius:20px;
+    border-radius: 20px;
+
     @media (min-width: 680px) {
         display: none;
     }
@@ -113,16 +123,18 @@ nav {
     font-family: Kumbh Sans;
 
 }
+
 li {
     text-decoration: none;
     list-style: none;
 }
+
 a {
     text-decoration: none;
     color: white;
     font-size: 1.2rem;
-        
-    @media (max-width: 500px){
+
+    @media (max-width: 500px) {
         font-size: 12px;
     }
 }
@@ -138,32 +150,42 @@ a {
     display: flex;
 
     .titles {
-        margin-top: 6rem ;
+        margin-top: 7rem;
         height: 100%;
-        position: absolute; /* Position the text absolutely within the container */
-        top: 50%; /* Adjust the top position as needed */
-        left: 50%; /* Adjust the left position as needed */
+        position: absolute;
+        /* Position the text absolutely within the container */
+        top: 50%;
+        /* Adjust the top position as needed */
+        left: 50%;
+        /* Adjust the left position as needed */
         transform: translate(-50%, -50%);
-        color: #fff; /* Text color */
-        padding: 20px; /* Add padding to the text for better visibility */
+        color: #fff;
+        /* Text color */
+        padding: 20px;
+        /* Add padding to the text for better visibility */
         color: white;
 
         h1 {
             font-family: Kasei Tokumin;
             font-size: 10rem;
             font-weight: 400;
-            @media (max-width: 980px){
-               font-size: 5rem;
+
+            @media (max-width: 980px) {
+                font-size: 5rem;
             }
-            @media (max-width: 500px){
+
+            @media (max-width: 500px) {
                 font-size: 3rem;
-             }
-        
+            }
+
         }
-        h2, h3 {
+
+        h2,
+        h3 {
             font-family: Kumbh Sans;
             font-weight: 400;
         }
+
         h2 {
             margin-bottom: -12px;
         }
@@ -179,18 +201,19 @@ a {
     height: 60rem;
     display: inline-block;
     position: relative;
-    
+
 }
 
-@media (max-width: 1000px){
+@media (max-width: 1000px) {
     .painting {
         height: 40rem;
     }
 }
+
 .painting img {
     height: 100%;
     width: 100%;
-    object-fit:cover;
+    object-fit: cover;
 }
 
 
@@ -204,34 +227,203 @@ a {
     padding: 4rem;
     max-width: 1000px;
     margin: 2rem auto;
-    @media (max-width: 480px){
-        padding:1rem;
+
+    @media (max-width: 480px) {
+        padding: 1rem;
     }
+
     h2 {
         font-family: Kaisei Tomukin;
         font-weight: 400;
         font-size: 3.5em;
         margin-bottom: 8px;
+
         @media (max-width: 480px) {
             font-size: 2.5em;
         }
     }
+
     p {
         font-family: Kaisei Tomukin;
         font-size: 18px;
         max-width: 600px;
         font-weight: 100;
-        color:#333;
+        color: #333;
         width: 80%;
         text-align: center;
         margin: auto;
-        
+
+    }
+}
+
+
+.appFeaturesBox {
+    background: #D7DEC9;
+    border-radius: 20px;
+    height: 20rem;
+    margin-top: 2rem;
+}
+
+.downloadBtn {
+    border: none;
+    border-radius: 20px;
+    background: #D7DEC9;
+    color: white;
+    font-family: Kumbh Sans;
+    font-size: 16px;
+    width: 120px;
+    padding: 0.5rem;
+    margin: 1rem auto;
+    transition: all 0.2s ease-in;
+
+
+}
+
+.downloadBtn:hover {
+    background: #8f9682;
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+
+}
+
+iframe {
+    width: 100%;
+    height: 40rem;
+    display: block;
+    position: relative;
+    margin: auto;
+    border-radius: 20px;
+
+    @media (max-width: 480px) {
+        height: 25rem;
+    }
+}
+
+
+.table {
+    width: 70%;
+    margin: 2rem auto;
+    border: 1px solid #333;
+    display: inline;
+    padding: 1rem;
+
+    p {
+        text-align: start;
+        padding: 1rem 0;
+    }
+}
+
+.teamSection {
+    margin-top: 3rem;
+
+    #projectManager {
+        margin-left: auto;
+        margin-right: auto;
     }
 
-    .appFeaturesBox {
-        background:#D7DEC9;
-        border-radius: 20px;
-        height: 20rem;
-        margin-top: 2rem;
+    .member {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 1rem auto;
+
+
+
+        .tooltip-container {
+            position: relative;
+            display: inline-block;
+            margin: auto;
+            cursor: pointer;
+            touch-action: manipulation;
+                        
+            .tooltip {
+                padding: 1rem;
+                visibility: hidden;
+                opacity: 0; /* Start with zero opacity */
+                position: absolute;
+                width: 120px;
+                background-color: #333;
+                text-align: center;
+                padding: 5px 0;
+                border-radius: 6px;
+                z-index: 100;
+                bottom: 110%; /* Position the tooltip above the image */
+                left: 50%;
+                transform: translateX(-50%);
+                transition: opacity 0.4s, visibility 0.4s; /* Add a transition effect for opacity and visibility */
+
+                p {
+                    color: white;
+                    font-size: 14px;
+                    font-family: Kumbh Sans;
+                }
+            }
+
+        }
+
+        .tooltip-container:hover .tooltip,
+        .tooltip-container.tapped .tooltip {
+            opacity: 1;
+            visibility: visible;
+        }
+        img {
+            width: 100px;
+            /* Set the desired width and height for your circular container */
+            height: 100px;
+            background-color: #ccc;
+            /* Gray background color */
+            border-radius: 50%;
+            /* Make it a circle by setting border-radius to 50% */
+            overflow: hidden;
+            /* Hide any image overflow */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+        }
+
+
+        h3 {
+            font-size: 25px;
+            font-weight: 300;
+        }
+
+        p {
+            color: #686868;
+        }
     }
+
+
+    .teamGrid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        /* Responsive columns */
+        max-width: 800px;
+        /* Optional: Set a max width for the grid */
+        margin: auto;
+        /* Optional: Center the grid horizontally */
+    }
+}
+
+
+footer {
+    background: #A6AF94;
+    padding: 4rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+     p, a {
+        margin: 1rem auto;
+        font-size: 20px;
+        text-align: center;
+     }
+
+
+     :nth-child(2) {
+        color: white;
+        font-family: Kumbh Sans;
+        padding: 0.5rem;
+        text-decoration: underline;
+   
+     }
 }
