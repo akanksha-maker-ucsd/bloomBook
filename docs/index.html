@@ -1,38 +1,94 @@
-<!DOCTYPE html><html><head><link href="https://fonts.googleapis.com/css?family=Kaisei+Tokumin&display=swap" rel="stylesheet" /><link href="https://fonts.googleapis.com/css?family=Kumbh+Sans&display=swap" rel="stylesheet" /><link href="./css/main.css" rel="stylesheet" /><title>Document</title></head><body><div class="v1_4"><div class="v1_5"></div><div class="v1_6"></div><div class="v1_7"></div><span class="v1_8">Bloom Book</span><span class="v1_9">Nurturing Your Plant Family with Care
-</span>
-<span class="v1_10"> TEAM BOSTON TEA PARTY</span>
-<span class="v1_11">presents</span>
-<div class="v1_12">
-    <span class="v1_13">Home </span>
-    <span class="v1_14">About</span>
-    <span class="v1_15">Notes</span>
-    <span class="v1_16">Product</span>
-    <span class="v1_17">Demo</span>
-    <span class="v1_18">Install</span>
-</div>
-<span class="v1_19">About Us</span>
-<span class="v1_20">Special Thanks to Ryan and Jenny from SDSC</span>
-<span class="v1_21">SDSC RDS Summer Internship 2023 - Confluence (atlassian.net)</span>
-<span class="v1_22">© 2023 Bloom Book. All rights reserved.</span>
-<span class="v1_23">Our Product</span>
-<span class="v1_24">Download</span>
-<span class="v1_25">Dev Notes</span>
-<span class="v1_26">Video Demo</span>
-<span class="v1_27">We are a small team of UCSD undergraduate students who came together by chance during the Summer 2023 Developer Internship here at the San Diego Super-Computer Center. Many of us were new to Android Studio and the responsibilities we took on were even more intimidating.  However, by dedicating time to getting to know each other more, our trust and reliance evolved. Not everything went smoothly nor was it perfect, but we managed to push through our hurdles as a team. Below are the members of Boston Tea Party, each one essential to the success of this project.</span>
-<span class="v1_28">
-a) Updating a plant does not update the system’s notification details <br>
+<!DOCTYPE html>
+<html>
 
-b) Images might fail to load consistently depending on your network
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Kaisei+Tokumin&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Kumbh+Sans&display=swap" rel="stylesheet" />
+    <link href="./index.less" rel="stylesheet/less" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/less" ></script>  
+    <script src = "./index.js" type="text/javascript"></script>
 
-c) Some UI behaviors might be jarring for deletion of documents 
+    <title>Document</title>
 
-d) Going back in navigation history won’t update the selection in the navigation drawer 
+</head>
 
-e) Updating your username and email might take a while to reflect in the app
+<body>
+    <nav>
+        <ul class="navLinks">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#product">Product</a></li>
+            <li><a href="#demo">Demo</a></li>
+            <li><a href="#install">Install</a></li>
+            <li><a href="#notes">Notes</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
 
-f) Plant Image search feature might not work all the time 
-</span>
+        <div class="mobileMenu" id ="mobileMenuIcon">&#9776;</div>
+    </nav>
 
-<span class="v1_29">Our app was developed over the course of 8 weeks of collaboration. While we achieved so much, there was a lot that was left unpolished that could affect your experience as you’re using the product</span><span class="v1_30">Bloom Book is an Android Application developed with a passion for plants and caretaking. It helps users record observations, create reminders, and learn more about the plants they own in their collection. Our simple and easy UI and makes it easier for you to keep things just a little more organized.  
-</span><div class="v1_31"><span class="v1_32">Akanksha Pandey</span><span class="v1_33">Project Manager</span><div class="v1_34"></div></div><div class="v1_35"><span class="v1_36">Valerie Nguyen</span><span class="v1_37">Full Stack</span><div class="v1_38"></div></div><div class="v1_39"><span class="v1_40">Rachel Chau</span><span class="v1_41">Product Owner</span><div class="v1_42"></div></div><div class="v1_43"><span class="v1_44">Bryan Tran</span><span class="v1_45">Backend Dev</span><div class="v1_46"></div></div><div class="v1_47"><span class="v1_48">Diego Reyes</span><span class="v1_49">Frontend Dev</span><div class="v1_50"></div></div><div class="v1_51"><span class="v1_52">William Kim</span><span class="v1_53">Build Master</span><div class="v1_54"></div></div><div class="v1_55"><span class="v1_56">Jordan Ruggles</span><span class="v1_57">Full Stack</span><div class="v1_58"></div></div><div class="v1_59"></div><div class="name"></div><span class="v1_63">Our app is available via a downloadable APK file. Please ensure you enable unknown installations on your Android OS device
-</span><div class="v1_64"></div><div class="v1_65"></div><span class="v1_66">Custom camera UI with flash, zoom, and tap focus to help make photography fun! All captured photos get saved locally too</span><span class="v1_67">Curious? Look up plant info from our web-scraped database of over 1000 plants or identify a plant from an image</span><span class="v1_68">Create scheduled reminders for a general task or for specific plants. Triggered reminders are sent to your device as a popup notification</span><span class="v1_69">Download</span><span class="v1_70">Plants are organized by the time you started tracking them. Journal entries and reminders follow this same hierarchy</span><div class="name"></div><div class="name"></div><div class="name"></div><div class="v1_81"></div><span class="v1_82">Contact Information | apandey@ucsd.edu</span></div></body></html>
+    <div class="dropdown-menu" id="dropDownMenu">
+        <ul class ="menuLinks">
+            <li><a href="#home" id="dropDownLink">Home</a></li>
+            <li><a href="#product" id="dropDownLink">Product</a></li>
+            <li><a href="#demo" id="dropDownLink">Demo</a></li>
+            <li><a href="#install" id="dropDownLink">Install</a></li>
+            <li><a href="#notes" id="dropDownLink">Notes</a></li>
+            <li><a href="#about" id="dropDownLink">About</a></li>
+        </ul>
+    </div>
+
+    
+    <section class="container" id="home">
+
+        <div class="painting">
+            <img src="./images/river_landscape.jpg" alt ="background image"/>
+        </div>
+        <div class="titles">
+            <h2>TEAM BOSTON TEA PARTY</h2>
+            <h3>presents</h3>
+
+            <h1>Bloom Book</h1>
+            <h3>Nurturing Your Plant Family With Care</h3>
+        </div>
+    </section>
+
+
+    <section id="product" class="content">
+        <h2>Our Product</h2>
+        <p>Bloom Book is an Android Application developed with a passion for plants and caretaking. It helps users record observations, create reminders, and learn more about the plants they own in their collection. Our simple and easy UI and makes it easier for you to keep things just a little more organized.  
+        </p>
+
+        <div class="appFeaturesBox">
+
+        </div>
+    </section>
+
+    <section id="demo" class="content">
+        <h2>Video Demo</h2>
+
+    </section>
+
+    <section id="install" class="content">
+        <h2>Download</h2>
+        <p>Our app is available via a downloadable APK file. Please ensure you enable unknown installations on your Android OS device</p>
+
+    </section>
+
+    <section id="notes" class="content">
+        <h2>Dev Notes</h2>
+        <p>Our app was developed over the course of 8 weeks of collaboration. While we achieved so much, there was a lot that was left unpolished that could affect your experience as you’re using the product</p>
+
+    </section>
+    <section id="about" class="content">
+        <h2>About Us</h2>
+        <p>Contact Information | apandey@ucsd.edu</p>
+        <br/>
+        <p>We are a small team of UCSD undergraduate students who came together by chance during the Summer 2023 Developer Internship here at the San Diego Super-Computer Center. Many of us were new to Android Studio and the responsibilities we took on were even more intimidating.  However, by dedicating time to getting to know each other more, our trust and reliance evolved. Not everything went smoothly nor was it perfect, but we managed to push through our hurdles as a team. Below are the members of Boston Tea Party, each one essential to the success of this project.</p>
+    </section>
+
+    <foot>
+
+    </foot>
+</body>
+
+</html>

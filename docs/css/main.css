@@ -3,6 +3,8 @@
 }
 body {
   font-size: 14px;
+  justify-content: center;
+  display: flex;
 }
 .v1_4 {
   width: 100%;
