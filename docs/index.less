@@ -1,7 +1,3 @@
-p,
-a {
-    font-size: 12px;
-}
 
 
 html,
@@ -260,14 +256,43 @@ a {
 .appFeaturesBox {
     background: #D7DEC9;
     border-radius: 20px;
-    height: 20rem;
-    margin-top: 2rem;
+    margin-top: 100px;
+    padding: 3rem;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+
+    /* Responsive columns */
+    max-width: 800px;
+    /* Optional: Set a max width for the grid */
+    margin: auto;
+    /* Optional: Center the grid horizontally */
+    text-align: left;
+    
+    @media (max-width: 600px) { /* Adjust the breakpoint as needed */
+        grid-template-columns: 1fr; /* Set a single column layout */
+        column-gap: 10px; /* Adjust the gap for smaller screens if needed */
+      }
+
+    .featureItem {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        p {
+            margin-top: 20px;
+            text-align: start;
+            margin-top: 20px;
+            transform: translateX(-12%);
+            
+        }
+    }
 }
 
 .downloadBtn {
     border: none;
     border-radius: 20px;
-    background: #D7DEC9;
+    background: #8f9682;
     color: white;
     font-family: Kumbh Sans;
     font-size: 16px;
@@ -280,7 +305,7 @@ a {
 }
 
 .downloadBtn:hover {
-    background: #8f9682;
+    background: #b4bf9f;
     cursor: pointer;
     transition: all 0.2s ease-in;
 
